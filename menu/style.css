@@ -1,0 +1,36 @@
+#principal{
+    margin: 15px;
+}
+
+#nome{
+    border: 1px solid;
+}
+
+#menu {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#menu ul{
+    padding: 20px;
+    margin: 0px;
+    list-style: none;
+    text-align: right;
+}
+
+#menu ul li{
+    display: inline;
+}
+
+#menu ul li a{
+    padding: 2px 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+}
+
+#menu ul li a:hover{
+    color: #6d6d6d;
+    font-size: 18px;
+    font-weight: bold;
+    color: blueviolet;
+}

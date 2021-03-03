@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style01.css">
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <div class="alert alert-warning" role="alert">
+        Formatação de campos com JavaScript
+    </div>
+    
+    <div id="principal">
+      <table width='300' height='160' border="0" cellspacing="0" class="tabela">
+        <tr height="35" colspan="2" valing='top'>
+          Este script formata qualquer campo. <br>
+          vejam os exemplos
+        </tr>
+        <tr>
+          <td height='35' height='25'>
+            Data
+          </td>
+          <td>
+            <input type="text" name="date" maxlength="10" onkeypress="formatar('##/##/####', this)">
+          </td>
+        </tr>
+        <tr>
+          <td height='35' height='25'>
+            Tel
+          </td>
+          <td>
+            <input type="text" name="tel" maxlength="14" onkeypress="formatar('##-#-####-####', this)">
+          </td>
+        </tr>
+        <tr>
+          <td height='35' height='25'>
+            CEP
+          </td>
+          <td>
+            <input type="text" name="cep" maxlength="9" onkeypress="formatar('####-###', this)">
+          </td>
+        </tr>
+        <tr>
+          <td height='35' height='25'>
+            CPF
+          </td>
+          <td>
+            <input type="text" name="cpf" maxlength="14" onkeypress="formatar('###.###.###-##', this)">
+          </td>
+        </tr>
+        <tr>
+          <td height='35' height='25'>
+            Hora
+          </td>
+          <td>
+            <input type="text" name="hora" maxlength="5" onkeypress="formatar('##', this)">
+          </td>
+        </tr>
+        <tr>
+          <td height='35' height='25'>
+            R.A
+          </td>
+          <td>
+            <input type="text" name="ra" maxlength="18" onkeypress="formatar('###.###.##-#.#.##', this)">
+          </td>
+        </tr>
+      </table>
+    </div>
+
+</body>
+</html>
